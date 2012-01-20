@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MarioQC' target in the 'MarioQC' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

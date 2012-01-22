@@ -1,11 +1,3 @@
-//
-//  MarioQCAppDelegate.m
-//  MarioQC
-//
-//  Created by mitsuba on 10/09/14.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "MarioQCAppDelegate.h"
 
 @implementation MarioQCAppDelegate
@@ -20,9 +12,14 @@
 	
     [qcView setValue:[NSNumber numberWithDouble:-0.61] forInputKey:@"YPosition"];
     [qcView setValue:[NSNumber numberWithDouble:0.02] forInputKey:@"Scale"];
+    [self installToolBarMenu];
 	[self windowViewFront:nil];
 }
 
+- (void) dealloc
+{
+    [super dealloc];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
@@ -49,6 +46,24 @@
 	//前面
 	[window setLevel:kCGHelpWindowLevel];
 }
+
+
+/*
+ メニューバーに追加
+ */
+- (void) installToolBarMenu
+{
+    NSStatusBar *bar = [ NSStatusBar systemStatusBar ];
+    NSStatusItem *sbItem = [ bar statusItemWithLength : NSVariableStatusItemLength ];
+    [ sbItem retain ];
+
+    [ sbItem setTitle : @"" ];
+    [ sbItem setImage : [NSImage imageNamed:@"SBIcon.tiff"] ];
+    [ sbItem setHighlightMode : YES ];
+    
+	[ sbItem setMenu : menuStatusBar ];
+}
+
 
 
 

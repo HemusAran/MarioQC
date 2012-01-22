@@ -6,12 +6,14 @@
 @interface MarioQCAppDelegate : NSObject { //<NSApplicationDelegate> {
     IBOutlet QCWindow *window;
     IBOutlet QCView *qcView;
+    
     IBOutlet NSMenu *menuStatusBar;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 
--(IBAction)windowViewFront:(id)sender;
+-(IBAction)windowViewChange:(id)sender;
+-(void)setWindowLevel:(NSInteger)level;
 -(void)installToolBarMenu;
 
 @end

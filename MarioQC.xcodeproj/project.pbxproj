@@ -16,7 +16,9 @@
 		0B32446C123F17EE0018EBDF /* QCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32446B123F17EE0018EBDF /* QCWindow.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* MarioQCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* MarioQCAppDelegate.m */; };
-		5E99FA7314CBF2A6009C3887 /* SBIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5E99FA7214CBF2A6009C3887 /* SBIcon.tiff */; };
+		5EE1EF2414CC379600AD55DB /* MarioQCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1EF2314CC379600AD55DB /* MarioQCSettings.m */; };
+		5EFC7B7F14CBFAE80034897D /* SBIcon_alf.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5EFC7B7D14CBFAE80034897D /* SBIcon_alf.tiff */; };
+		5EFC7B8014CBFAE80034897D /* SBIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5EFC7B7E14CBFAE80034897D /* SBIcon.tiff */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -41,7 +43,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		5E99FA7214CBF2A6009C3887 /* SBIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SBIcon.tiff; sourceTree = "<group>"; };
+		5EE1EF2314CC379600AD55DB /* MarioQCSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarioQCSettings.m; sourceTree = "<group>"; };
+		5EFC7B7D14CBFAE80034897D /* SBIcon_alf.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SBIcon_alf.tiff; sourceTree = "<group>"; };
+		5EFC7B7E14CBFAE80034897D /* SBIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SBIcon.tiff; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MarioQC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MarioQC-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MarioQC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarioQC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -62,6 +66,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5EE1EF2314CC379600AD55DB /* MarioQCSettings.m */,
 				0B32446A123F17EE0018EBDF /* QCWindow.h */,
 				0B32446B123F17EE0018EBDF /* QCWindow.m */,
 				256AC3D80F4B6AC300CF3369 /* MarioQCAppDelegate.h */,
@@ -130,7 +135,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5E99FA7214CBF2A6009C3887 /* SBIcon.tiff */,
+				5EFC7B7D14CBFAE80034897D /* SBIcon_alf.tiff */,
+				5EFC7B7E14CBFAE80034897D /* SBIcon.tiff */,
 				0B2A1601123F2A260030636F /* mario.icns */,
 				0B324451123F176B0018EBDF /* mario */,
 				0B324455123F176B0018EBDF /* MarioQC.qtz */,
@@ -208,7 +214,8 @@
 				0B324458123F176B0018EBDF /* 03.png in Resources */,
 				0B324459123F176B0018EBDF /* MarioQC.qtz in Resources */,
 				0B2A1602123F2A260030636F /* mario.icns in Resources */,
-				5E99FA7314CBF2A6009C3887 /* SBIcon.tiff in Resources */,
+				5EFC7B7F14CBFAE80034897D /* SBIcon_alf.tiff in Resources */,
+				5EFC7B8014CBFAE80034897D /* SBIcon.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +229,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* MarioQCAppDelegate.m in Sources */,
 				0B32446C123F17EE0018EBDF /* QCWindow.m in Sources */,
+				5EE1EF2414CC379600AD55DB /* MarioQCSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

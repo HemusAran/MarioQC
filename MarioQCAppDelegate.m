@@ -13,7 +13,6 @@
     [qcView setValue:[NSNumber numberWithDouble:-0.61] forInputKey:@"YPosition"];
     [qcView setValue:[NSNumber numberWithDouble:0.02] forInputKey:@"Scale"];
     [self installToolBarMenu];
-	[self windowViewFront:nil];
 }
 
 - (void) dealloc
@@ -41,11 +40,24 @@
 /*
  ウィンドウレベル
  */
--(IBAction)windowViewFront:(id)sender
+-(IBAction)windowViewChange:(id)sender
 {
-	//前面
-	[window setLevel:kCGHelpWindowLevel];
+    if ([window level] != kCGDesktopWindowLevel) {
+        [self setWindowLevel:kCGDesktopWindowLevel];
+    } else {
+        [self setWindowLevel:-1];
+    }
 }
+
+-(void)setWindowLevel:(NSInteger)level
+{
+    if (level != kCGDesktopWindowLevel) {
+		level = kCGHelpWindowLevel;
+	}
+	
+	[window setLevel:level];
+}
+
 
 
 /*
@@ -59,6 +71,8 @@
 
     [ sbItem setTitle : @"" ];
     [ sbItem setImage : [NSImage imageNamed:@"SBIcon.tiff"] ];
+    [ sbItem setAlternateImage : [NSImage imageNamed:@"SBIcon_alf.tiff"] ];
+    [ sbItem setToolTip : @"MarioQC" ];
     [ sbItem setHighlightMode : YES ];
     
 	[ sbItem setMenu : menuStatusBar ];

@@ -15,14 +15,14 @@
     
     [self setWindowLevel:[ud integerForKey:@"QCWindowLevel"]];
 	
-//	if ([ud integerForKey:@"mouseFollowMode"] == NSOnState) {
-//		[self mouseFollowMode:nil];
-//	}
-//	if ([ud integerForKey:@"cpuMode"] == NSOnState) {
-//		[self CpuMode:nil];
-//	}
-//    
-//	[window makeKeyAndOrderFront:self];
+    marioSize = [ud floatForKey:@"marioSize"];
+    if (marioSize <= 0) marioSize = 0.1;
+    [self setResizeMario];
+    
+    marioHeight = [ud floatForKey:@"marioHeight"];
+    [self setHeightMario];
+    
+    [window makeKeyAndOrderFront:self];
 }
 
 
@@ -34,10 +34,9 @@
 {
 	NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
 	[ud setInteger:[window level] forKey:@"QCWindowLevel"];
-//	
-//	[ud setInteger:[mouseMode state] forKey:@"mouseFollowMode"];
-//	[ud setInteger:[cpuMode state] forKey:@"cpuMode"];
-//	
+    [ud setFloat:marioSize forKey:@"marioSize"];
+    [ud setFloat:marioHeight forKey:@"marioHeight"];
+
 	// 設定ファイルに反映
 	[ ud synchronize ];
 }

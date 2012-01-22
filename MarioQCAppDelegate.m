@@ -10,10 +10,39 @@
 		NSLog(@"Could not load composition");
 	}
 	
-    [qcView setValue:[NSNumber numberWithDouble:-0.61] forInputKey:@"YPosition"];
-    [qcView setValue:[NSNumber numberWithDouble:0.02] forInputKey:@"Scale"];
     [self installToolBarMenu];
 }
+
+-(void)setHeightMario
+{
+    [qcView setValue:[NSNumber numberWithDouble:marioHeight] forInputKey:@"YPosition"];
+}
+-(IBAction)heightMario:(id)sender
+{
+    if ([sender tag] == 1) {
+        marioHeight += 0.01;
+    } else {
+        marioHeight -= 0.01;
+    }
+    [self setHeightMario];
+    
+}
+
+
+-(void)setResizeMario
+{
+    [qcView setValue:[NSNumber numberWithDouble:marioSize] forInputKey:@"Scale"];
+}
+-(IBAction)resizeMario:(id)sender
+{
+    if ([sender tag] == 1) {
+        marioSize += 0.01;
+    } else {
+        marioSize -= 0.01;
+    }
+    [self setResizeMario];
+}
+
 
 - (void) dealloc
 {
@@ -78,7 +107,5 @@
 	[ sbItem setMenu : menuStatusBar ];
 }
 
-
-
-
 @end
+

@@ -20,9 +20,13 @@
 -(IBAction)heightMario:(id)sender
 {
     if ([sender tag] == 1) {
-        marioHeight += 0.01;
+        if (marioHeight < 1.0) {
+            marioHeight += 0.01;
+        }
     } else {
-        marioHeight -= 0.01;
+        if (marioHeight > -1.0) {
+            marioHeight -= 0.01;
+        }
     }
     [self setHeightMario];
     
@@ -36,9 +40,13 @@
 -(IBAction)resizeMario:(id)sender
 {
     if ([sender tag] == 1) {
-        marioSize += 0.01;
+        if (marioSize < 5) {
+            marioSize += 0.01;
+        }
     } else {
-        marioSize -= 0.01;
+        if (marioSize > -0.01) {
+            marioSize -= 0.01;
+        }
     }
     [self setResizeMario];
 }

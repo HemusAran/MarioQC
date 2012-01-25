@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0B2A1602123F2A260030636F /* mario.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A1601123F2A260030636F /* mario.icns */; };
-		0B324456123F176B0018EBDF /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B324452123F176B0018EBDF /* 01.png */; };
-		0B324457123F176B0018EBDF /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B324453123F176B0018EBDF /* 02.png */; };
-		0B324458123F176B0018EBDF /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B324454123F176B0018EBDF /* 03.png */; };
 		0B324459123F176B0018EBDF /* MarioQC.qtz in Resources */ = {isa = PBXBuildFile; fileRef = 0B324455123F176B0018EBDF /* MarioQC.qtz */; };
 		0B32445E123F17830018EBDF /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B32445D123F17830018EBDF /* Quartz.framework */; };
 		0B32446C123F17EE0018EBDF /* QCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32446B123F17EE0018EBDF /* QCWindow.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* MarioQCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* MarioQCAppDelegate.m */; };
+		5EA9FE0014D02F1E009745E3 /* m01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FDFD14D02F1E009745E3 /* m01.png */; };
+		5EA9FE0114D02F1E009745E3 /* m02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FDFE14D02F1E009745E3 /* m02.png */; };
+		5EA9FE0214D02F1E009745E3 /* m03.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FDFF14D02F1E009745E3 /* m03.png */; };
+		5EA9FE0714D02F24009745E3 /* l01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FE0414D02F24009745E3 /* l01.png */; };
+		5EA9FE0814D02F24009745E3 /* l02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FE0514D02F24009745E3 /* l02.png */; };
+		5EA9FE0914D02F24009745E3 /* l03.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FE0614D02F24009745E3 /* l03.png */; };
 		5EE1EF2414CC379600AD55DB /* MarioQCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1EF2314CC379600AD55DB /* MarioQCSettings.m */; };
 		5EFC7B7F14CBFAE80034897D /* SBIcon_alf.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5EFC7B7D14CBFAE80034897D /* SBIcon_alf.tiff */; };
 		5EFC7B8014CBFAE80034897D /* SBIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5EFC7B7E14CBFAE80034897D /* SBIcon.tiff */; };
@@ -27,9 +30,6 @@
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B2A1601123F2A260030636F /* mario.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = mario.icns; sourceTree = "<group>"; };
-		0B324452123F176B0018EBDF /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
-		0B324453123F176B0018EBDF /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
-		0B324454123F176B0018EBDF /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
 		0B324455123F176B0018EBDF /* MarioQC.qtz */ = {isa = PBXFileReference; lastKnownFileType = "video.quartz-composer"; path = MarioQC.qtz; sourceTree = "<group>"; };
 		0B32445D123F17830018EBDF /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		0B32446A123F17EE0018EBDF /* QCWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCWindow.h; sourceTree = "<group>"; };
@@ -43,6 +43,12 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5EA9FDFD14D02F1E009745E3 /* m01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m01.png; sourceTree = "<group>"; };
+		5EA9FDFE14D02F1E009745E3 /* m02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m02.png; sourceTree = "<group>"; };
+		5EA9FDFF14D02F1E009745E3 /* m03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m03.png; sourceTree = "<group>"; };
+		5EA9FE0414D02F24009745E3 /* l01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l01.png; sourceTree = "<group>"; };
+		5EA9FE0514D02F24009745E3 /* l02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l02.png; sourceTree = "<group>"; };
+		5EA9FE0614D02F24009745E3 /* l03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l03.png; sourceTree = "<group>"; };
 		5EE1EF2314CC379600AD55DB /* MarioQCSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarioQCSettings.m; sourceTree = "<group>"; };
 		5EFC7B7D14CBFAE80034897D /* SBIcon_alf.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SBIcon_alf.tiff; sourceTree = "<group>"; };
 		5EFC7B7E14CBFAE80034897D /* SBIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SBIcon.tiff; sourceTree = "<group>"; };
@@ -73,16 +79,6 @@
 				256AC3D90F4B6AC300CF3369 /* MarioQCAppDelegate.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		0B324451123F176B0018EBDF /* mario */ = {
-			isa = PBXGroup;
-			children = (
-				0B324452123F176B0018EBDF /* 01.png */,
-				0B324453123F176B0018EBDF /* 02.png */,
-				0B324454123F176B0018EBDF /* 03.png */,
-			);
-			path = mario;
 			sourceTree = "<group>";
 		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
@@ -135,10 +131,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5EA9FE0314D02F24009745E3 /* luigi */,
+				5EA9FDFC14D02F1E009745E3 /* mario */,
 				5EFC7B7D14CBFAE80034897D /* SBIcon_alf.tiff */,
 				5EFC7B7E14CBFAE80034897D /* SBIcon.tiff */,
 				0B2A1601123F2A260030636F /* mario.icns */,
-				0B324451123F176B0018EBDF /* mario */,
 				0B324455123F176B0018EBDF /* MarioQC.qtz */,
 				8D1107310486CEB800E47090 /* MarioQC-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -155,6 +152,26 @@
 				0B32445D123F17830018EBDF /* Quartz.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EA9FDFC14D02F1E009745E3 /* mario */ = {
+			isa = PBXGroup;
+			children = (
+				5EA9FDFD14D02F1E009745E3 /* m01.png */,
+				5EA9FDFE14D02F1E009745E3 /* m02.png */,
+				5EA9FDFF14D02F1E009745E3 /* m03.png */,
+			);
+			path = mario;
+			sourceTree = "<group>";
+		};
+		5EA9FE0314D02F24009745E3 /* luigi */ = {
+			isa = PBXGroup;
+			children = (
+				5EA9FE0414D02F24009745E3 /* l01.png */,
+				5EA9FE0514D02F24009745E3 /* l02.png */,
+				5EA9FE0614D02F24009745E3 /* l03.png */,
+			);
+			path = luigi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,13 +226,16 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				0B324456123F176B0018EBDF /* 01.png in Resources */,
-				0B324457123F176B0018EBDF /* 02.png in Resources */,
-				0B324458123F176B0018EBDF /* 03.png in Resources */,
 				0B324459123F176B0018EBDF /* MarioQC.qtz in Resources */,
 				0B2A1602123F2A260030636F /* mario.icns in Resources */,
 				5EFC7B7F14CBFAE80034897D /* SBIcon_alf.tiff in Resources */,
 				5EFC7B8014CBFAE80034897D /* SBIcon.tiff in Resources */,
+				5EA9FE0014D02F1E009745E3 /* m01.png in Resources */,
+				5EA9FE0114D02F1E009745E3 /* m02.png in Resources */,
+				5EA9FE0214D02F1E009745E3 /* m03.png in Resources */,
+				5EA9FE0714D02F24009745E3 /* l01.png in Resources */,
+				5EA9FE0814D02F24009745E3 /* l02.png in Resources */,
+				5EA9FE0914D02F24009745E3 /* l03.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

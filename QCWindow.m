@@ -27,4 +27,12 @@
 	return (id)result; 
 }
 
+/*
+ Spacesで移動しても付いてくるよう設定
+ */
+- (NSWindowCollectionBehavior)collectionBehavior {
+	return NSWindowCollectionBehaviorCanJoinAllSpaces;
+}
+
+
 @end

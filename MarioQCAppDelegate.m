@@ -72,8 +72,8 @@
     [ sbItem retain ];
     
     [ sbItem setTitle : @"" ];
-    [ sbItem setImage : [NSImage imageNamed:@"SBIcon.tiff"] ];
-    [ sbItem setAlternateImage : [NSImage imageNamed:@"SBIcon_alf.tiff"] ];
+    [ sbItem setImage : [NSImage imageNamed:@"SBIcon_main.png"] ];
+    [ sbItem setAlternateImage : [NSImage imageNamed:@"SBIcon_alf.png"] ];
     [ sbItem setToolTip : @"MarioQC" ];
     [ sbItem setHighlightMode : YES ];
     

@@ -12,9 +12,9 @@
 		0B32446C123F17EE0018EBDF /* QCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32446B123F17EE0018EBDF /* QCWindow.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* MarioQCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* MarioQCAppDelegate.m */; };
-		5E17579C14E0234600D309A3 /* mario.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5E17579B14E0234600D309A3 /* mario.icns */; };
 		5E2E205E14E0218200A77195 /* SBIcon_alf.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2E205C14E0218200A77195 /* SBIcon_alf.png */; };
 		5E2E205F14E0218200A77195 /* SBIcon_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2E205D14E0218200A77195 /* SBIcon_main.png */; };
+		5E74733F14E0244E00F0B567 /* mario.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5E74733E14E0244E00F0B567 /* mario.icns */; };
 		5EA9FE0014D02F1E009745E3 /* m01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FDFD14D02F1E009745E3 /* m01.png */; };
 		5EA9FE0114D02F1E009745E3 /* m02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FDFE14D02F1E009745E3 /* m02.png */; };
 		5EA9FE0214D02F1E009745E3 /* m03.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA9FDFF14D02F1E009745E3 /* m03.png */; };
@@ -42,9 +42,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		5E17579B14E0234600D309A3 /* mario.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = mario.icns; sourceTree = "<group>"; };
 		5E2E205C14E0218200A77195 /* SBIcon_alf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SBIcon_alf.png; sourceTree = "<group>"; };
 		5E2E205D14E0218200A77195 /* SBIcon_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SBIcon_main.png; sourceTree = "<group>"; };
+		5E74733E14E0244E00F0B567 /* mario.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = mario.icns; sourceTree = "<group>"; };
 		5EA9FDFD14D02F1E009745E3 /* m01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m01.png; sourceTree = "<group>"; };
 		5EA9FDFE14D02F1E009745E3 /* m02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m02.png; sourceTree = "<group>"; };
 		5EA9FDFF14D02F1E009745E3 /* m03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m03.png; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5E17579B14E0234600D309A3 /* mario.icns */,
+				5E74733E14E0244E00F0B567 /* mario.icns */,
 				5E2E205C14E0218200A77195 /* SBIcon_alf.png */,
 				5E2E205D14E0218200A77195 /* SBIcon_main.png */,
 				5EA9FE0314D02F24009745E3 /* luigi */,
@@ -235,7 +235,7 @@
 				5EA9FE0914D02F24009745E3 /* l03.png in Resources */,
 				5E2E205E14E0218200A77195 /* SBIcon_alf.png in Resources */,
 				5E2E205F14E0218200A77195 /* SBIcon_main.png in Resources */,
-				5E17579C14E0234600D309A3 /* mario.icns in Resources */,
+				5E74733F14E0244E00F0B567 /* mario.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
